@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:app_loja/src/pages/orders/components/order_status_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:app_loja/src/config/app_data.dart';
 import 'package:app_loja/src/models/cart_item_model.dart';
 import 'package:app_loja/src/services/utils_services.dart';
 import '../../../config/app_colors.dart';
@@ -35,13 +34,13 @@ class OrderTile extends StatelessWidget {
             children: [
               Text(
                 'Pedido: ${order.id}',
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.secondary,
                 ),
               ),
               Text(
                 utilsServices.formatDateTime(order.createdDateTime),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 12,
                   color: AppColors.heading,
                 ),
@@ -91,7 +90,7 @@ class OrderTile extends StatelessWidget {
 
             Text.rich(
               TextSpan(
-                style:  const TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
                 children: [
                   const TextSpan(
                       text: 'Total ',

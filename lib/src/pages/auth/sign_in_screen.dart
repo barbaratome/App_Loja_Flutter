@@ -33,9 +33,9 @@ class _SignInState extends State<SignIn> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: AppColors.shape,
-                  borderRadius: const BorderRadius.vertical(
+                  borderRadius: BorderRadius.vertical(
                     top: Radius.circular(45),
                   ),
                 ),
@@ -111,10 +111,8 @@ class _SignInState extends State<SignIn> {
                           style: OutlinedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25)),
-                            side:  BorderSide(
-                              width: 2,
-                              color: AppColors.primary
-                            ),
+                            side: const BorderSide(
+                                width: 2, color: AppColors.primary),
                           ),
                           onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(

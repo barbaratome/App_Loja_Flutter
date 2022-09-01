@@ -4,7 +4,6 @@ import '../../models/item_model.dart';
 import '../../services/utils_services.dart';
 import '../cammon_widgets/quantity_widget.dart';
 
-
 class ProductScreen extends StatefulWidget {
   ProductScreen({
     Key? key,
@@ -84,7 +83,7 @@ class _ProductScreenState extends State<ProductScreen> {
                       // Preço
                       Text(
                         utilsServices.priceToCurrency(widget.item.price),
-                        style:  TextStyle(
+                        style: const TextStyle(
                           fontSize: 23,
                           fontWeight: FontWeight.bold,
                           color: AppColors.primary,
@@ -115,9 +114,7 @@ class _ProductScreenState extends State<ProductScreen> {
                               borderRadius: BorderRadius.circular(15),
                             ),
                           ),
-                          onPressed: () {
-
-                          },
+                          onPressed: () {},
                           label: const Text(
                             'Adicionar no carrinho',
                             style: TextStyle(
@@ -125,7 +122,7 @@ class _ProductScreenState extends State<ProductScreen> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          icon:  Icon(
+                          icon: const Icon(
                             Icons.shopping_cart_outlined,
                             color: AppColors.primary,
                           ),
@@ -145,8 +142,9 @@ class _ProductScreenState extends State<ProductScreen> {
             child: SafeArea(
               child: IconButton(
                 onPressed: () => Navigator.of(context).pop(),
-                icon: Icon(
-                  Icons.arrow_back_ios, color: AppColors.primary,
+                icon: const Icon(
+                  Icons.arrow_back_ios,
+                  color: AppColors.primary,
                 ),
               ),
             ),

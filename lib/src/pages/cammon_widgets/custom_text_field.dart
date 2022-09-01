@@ -2,11 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
-
-
 // CAMPO DE TEXTO CUSTOMIZADO PARA USAR EM TODAS AS TELAS
-
 
 class CustomTextField extends StatefulWidget {
   CustomTextField({
@@ -34,14 +30,12 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  
-  //   DEIXAR O CAMPO DE SENHA SECRETA 
-  
+  //   DEIXAR O CAMPO DE SENHA SECRETA
+
   bool isObscured = false;
 
   @override
   void initState() {
-    
     super.initState();
     isObscured = widget.isSecret;
   }

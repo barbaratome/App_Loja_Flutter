@@ -19,7 +19,7 @@ class _ProfileTabState extends State<ProfileTab> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primary,
-        title: Text(
+        title: const Text(
           'Perfil do Usuário',
           style: TextStyle(color: AppColors.shape, fontWeight: FontWeight.bold),
         ),
@@ -28,11 +28,11 @@ class _ProfileTabState extends State<ProfileTab> {
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => SignIn()),
+                    builder: ((context) => const SignIn()),
                   ),
                 );
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.logout,
                 color: AppColors.stroke,
               ))
@@ -105,8 +105,8 @@ class _ProfileTabState extends State<ProfileTab> {
               children: [
                 Stack(
                   children: [
-                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 12),
                       child: Text(
                         'Atualizar senha',
                         textAlign: TextAlign.center,

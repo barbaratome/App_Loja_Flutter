@@ -22,8 +22,8 @@ class _HomeTabState extends State<HomeTab> {
         centerTitle: true,
 
         // LOGO NA APP BAR
-        title: Text.rich(TextSpan(
-            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        title: const Text.rich(TextSpan(
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             children: [
               TextSpan(
                   text: 'Atêlie ',
@@ -43,14 +43,14 @@ class _HomeTabState extends State<HomeTab> {
               onTap: () {},
               child: Badge(
                 badgeColor: Colors.red,
-                badgeContent: Text(
+                badgeContent: const Text(
                   '0',
                   style: TextStyle(
                     color: AppColors.shape,
                     fontSize: 12,
                   ),
                 ),
-                child: Icon(
+                child: const Icon(
                   Icons.shopping_cart,
                   color: AppColors.secondary,
                 ),
@@ -77,11 +77,11 @@ class _HomeTabState extends State<HomeTab> {
                   color: Colors.grey.shade400,
                   fontSize: 14,
                 ),
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   Icons.search,
                   color: AppColors.primary,
                 ),
-                fillColor: Color.fromARGB(255, 232, 229, 229),
+                fillColor: const Color.fromARGB(255, 232, 229, 229),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(60),
                   borderSide: const BorderSide(

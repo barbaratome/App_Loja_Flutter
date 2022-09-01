@@ -12,8 +12,8 @@ class AppName extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text.rich(TextSpan(
-            style: const TextStyle(
+        const Text.rich(TextSpan(
+            style: TextStyle(
               fontSize: 40,
             ),
             children: [
@@ -33,7 +33,7 @@ class AppName extends StatelessWidget {
         SizedBox(
           height: 30,
           child: DefaultTextStyle(
-            style: TextStyle(fontSize: 18, color: AppColors.stroke),
+            style: const TextStyle(fontSize: 18, color: AppColors.stroke),
 
 // Animação Tela de Login
             child: AnimatedTextKit(

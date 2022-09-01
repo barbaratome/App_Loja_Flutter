@@ -27,26 +27,26 @@ class SignUp extends StatelessWidget {
           child: Stack(
             children: [
               Column(children: [
-                 Expanded(
+                const Expanded(
                     child: Center(
                         child: Text('Bem vindo(a)',
                             style: TextStyle(
                                 color: AppColors.shape,
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold)))),
-                 Text('Cadastre-se aqui',
+                const Text('Cadastre-se aqui',
                     style: TextStyle(
                         color: AppColors.shape,
                         fontSize: 20,
                         fontWeight: FontWeight.bold)),
 
-  // Formulário de Cadastro
+                // Formulário de Cadastro
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
-                  decoration:  BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: AppColors.shape,
-                    borderRadius: const 
+                    borderRadius:
                         BorderRadius.vertical(top: Radius.circular(45)),
                   ),
                   child: Column(
@@ -90,19 +90,19 @@ class SignUp extends StatelessWidget {
                 ),
               ]),
 
-   // Botão de voltar pra tela de login
+              // Botão de voltar pra tela de login
               Positioned(
                 top: 25,
                 left: 10,
                 child: SafeArea(
                   child: IconButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      icon:  Icon(
-                        Icons.arrow_back_ios,
-                        color: AppColors.shape,
-                     ),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back_ios,
+                      color: AppColors.shape,
+                    ),
                   ),
                 ),
               ),

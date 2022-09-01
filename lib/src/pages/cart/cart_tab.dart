@@ -38,7 +38,7 @@ class _CartTabState extends State<CartTab> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primary,
-        title: Text(
+        title: const Text(
           'Carrinho',
           style: TextStyle(color: AppColors.shape, fontWeight: FontWeight.bold),
         ),
@@ -86,7 +86,7 @@ class _CartTabState extends State<CartTab> {
                 ),
                 Text(
                   utilsServices.priceToCurrency(cartTotalPrice()),
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 23,
                       color: AppColors.primary,
                       fontWeight: FontWeight.bold),
@@ -101,7 +101,7 @@ class _CartTabState extends State<CartTab> {
                       bool? result = await showOrdemConfirmation();
                       print(result);
                     },
-                    child: Text(
+                    child: const Text(
                       'concluir pedido',
                       style: TextStyle(fontSize: 18, color: AppColors.primary),
                     ),

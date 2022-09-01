@@ -28,8 +28,8 @@ class PaymentDialog extends StatelessWidget {
               children: [
                 // TITULO
 
-               const  Padding(
-                  padding:  EdgeInsets.symmetric(vertical: 10),
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
                   child: Text(
                     'Pagamento com Pix',
                     style: TextStyle(
@@ -48,7 +48,7 @@ class PaymentDialog extends StatelessWidget {
                 // VENCIMENTO
                 Text(
                   'Vencimento: ${utilsServices.formatDateTime(order.overdueDateTime)}',
-                  style: TextStyle(fontSize: 12),
+                  style: const TextStyle(fontSize: 12),
                 ),
                 // TOTAL
                 Text(

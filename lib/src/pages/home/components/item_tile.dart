@@ -8,14 +8,11 @@ import '../../../services/utils_services.dart';
 import '../../product/product_screen.dart';
 
 class ItemTile extends StatelessWidget {
-
   final ItemModel item;
-  
 
   ItemTile({
     Key? key,
     required this.item,
-   
   }) : super(key: key);
 
   final UtilsServices utilsServices = UtilsServices();
@@ -48,7 +45,10 @@ class ItemTile extends StatelessWidget {
 
                   Expanded(
                       child: Hero(
-                          tag: item.imgUrl, child: Image.asset(item.imgUrl, ))),
+                          tag: item.imgUrl,
+                          child: Image.asset(
+                            item.imgUrl,
+                          ))),
                   // nome
 
                   Text(
@@ -89,17 +89,16 @@ class ItemTile extends StatelessWidget {
           top: 4,
           right: 4,
           child: GestureDetector(
-            onTap: () {
-                          },
+            onTap: () {},
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: AppColors.primary,
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15),
                       topRight: Radius.circular(20))),
               height: 35,
               width: 30,
-              child: Icon(
+              child: const Icon(
                 Icons.add_shopping_cart_outlined,
                 color: AppColors.shape,
                 size: 20,
