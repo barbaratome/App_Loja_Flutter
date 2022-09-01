@@ -28,17 +28,16 @@ class SignUp extends StatelessWidget {
             children: [
               Column(children: [
                 const Expanded(
-                    child: Center(
-                        child: Text('Bem vindo(a)',
-                            style: TextStyle(
-                                color: AppColors.shape,
-                                fontSize: 35,
-                                fontWeight: FontWeight.bold)))),
-                const Text('Cadastre-se aqui',
-                    style: TextStyle(
-                        color: AppColors.shape,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold)),
+                  child: Center(
+                    child: Text(
+                      'Cadastro',
+                      style: TextStyle(
+                          color: AppColors.shape,
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
 
                 // Formulário de Cadastro
                 Container(
@@ -81,10 +80,12 @@ class SignUp extends StatelessWidget {
                         inputtext: TextInputType.phone,
                       ),
                       SizedBox(
-                          height: 50,
-                          child: ElevatedButton(
-                              onPressed: () {},
-                              child: const Text('Cadastrar usuário')))
+                        height: 50,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: const Text('Cadastrar usuário'),
+                        ),
+                      )
                     ],
                   ),
                 ),

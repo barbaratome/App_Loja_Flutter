@@ -1,4 +1,5 @@
 import 'package:app_loja/src/config/app_colors.dart';
+import 'package:app_loja/src/pages/cart/cart_tab.dart';
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'components/category_tile.dart';
@@ -14,6 +15,8 @@ class HomeTab extends StatefulWidget {
 
 class _HomeTabState extends State<HomeTab> {
   String selectedCategory = 'Toalhas';
+
+  bool isLoading = false;
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +43,19 @@ class _HomeTabState extends State<HomeTab> {
               right: 15,
             ),
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return CartTab();
+                    },
+                  ),
+                );
+              },
               child: Badge(
                 badgeColor: Colors.red,
                 badgeContent: const Text(
-                  '0',
+                  '3',
                   style: TextStyle(
                     color: AppColors.shape,
                     fontSize: 12,

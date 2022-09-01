@@ -1,5 +1,5 @@
 import 'package:app_loja/src/config/app_colors.dart';
-import 'package:app_loja/src/pages/auth/sign_in_screen.dart';
+import 'package:app_loja/src/pages/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ateliê da Sil - Loja',
+      title: 'Ateliê da Sil',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary)
       ),
-      home: const SignIn(),
+      home: const SplashScreen(),
     );
   }
 }
